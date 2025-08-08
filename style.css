@@ -118,3 +118,44 @@ footer .social-icons a {
 footer p {
     margin: 10px 0 0;
 }
+
+/* Destination carousel */
+.destinations-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 40px 20px;
+    gap: 20px;
+    scrollbar-width: none;
+}
+
+.destinations-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.destination-card {
+    flex: 0 0 300px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.destination-card:hover {
+    transform: scale(1.05);
+}
+
+.destination-card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.destination-card h3 {
+    margin: 15px 0 5px;
+}
+
+.destination-card p {
+    padding: 0 15px 20px;
+}
